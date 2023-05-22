@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Listagem de contatos";
+}
+<div class="justify-content-end text-end">
+    <a role="button" class="text-end btn btn-outline-success" asp-controller="Contato" asp-action="CriarContato">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+        </svg>
+        Adcionar novo contato</a>
+</div>
+
+<div class="text-center">
+    <h1 class="display-4">Listagem de contatos</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Email</th>
+                <th scope="col">Telefone</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Lissandra</td>
+                <td>Lissandra@gmail.com</td>
+                <td>11111111</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-outline-primary" asp-controller="Contato" asp-action="EditarContato">Editar</a>
+                        <a role="button" class="btn btn-outline-danger" asp-controller="Contato" asp-action="ApagarContato" >Apagar</a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
